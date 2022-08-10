@@ -8,6 +8,6 @@ public class SpringMartinController {
 	
 	@RequestMapping("/")
 	public String helloWorld() {
-		return "hello world my friend";
+		return "hello world my friend hello hello";
 	}
 }
