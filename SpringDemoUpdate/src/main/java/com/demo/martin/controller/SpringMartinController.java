@@ -1,13 +1,14 @@
 package com.demo.martin.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class SpringMartinController {
 	
 	@RequestMapping("/")
 	public String helloWorld() {
-		return "hello world my friend hello hello";
+		return "books";
 	}
 }
