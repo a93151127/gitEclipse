@@ -9,6 +9,7 @@ public class SpringMartinController {
 	
 	@RequestMapping("/")
 	public String helloWorld() {
+		System.out.println("today is a good day");
 		return "books";
 	}
 }
