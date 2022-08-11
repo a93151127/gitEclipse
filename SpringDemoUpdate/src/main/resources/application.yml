@@ -4,11 +4,27 @@ server:
     context-path: /api/v1 
 logging: 
   level: 
-    root: warn 
+    root: info 
   file: 
     name: D:/workSpace/2022080901/SpringDemoUpdate/log/debug.log
     
 book:
   name: martin教學
   description: 今天天氣真好
-   
+  
+spring:
+   datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/book?useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: root  
+      
+   jpa:
+    hibernate:
+      ddl-auto: update
+      ##ddl-auto:create會讓資料庫自動產生表,但每次啟動都會把資料庫的表刪除重新產生一張(舊資料會不見)
+      ##update若是第一次會產生一張新的表,第一次過後則是用"更新"的方式
+      show-sql: true  
+    
+      
+      

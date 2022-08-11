@@ -5,7 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.activation.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,11 +19,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.demo.martin.entity.Book;
 import com.demo.martin.entity.TestDemo;
+import com.demo.martin.service.BookService;
 
 @RestController
 
 public class SpringMartinController {
+	
+//	@Autowired
+//	private TestDemo testDemo;
 	
 	@Value("${book.name}")
 	private String bookName;
@@ -99,17 +108,20 @@ public class SpringMartinController {
 		return map;
 	}
 	
-	@GetMapping("ymlClassBook")
-	public Object getYmlClassBook() {
-		Map<String,Object> map = new HashMap<>();
-		TestDemo testDemo = new TestDemo(bookName,bookDescript);
-		
-		map.put("name", testDemo.getBookName());
-		map.put("name1", bookName);
-		map.put("descript", testDemo.getBookDescript());
-		map.put("descript1", bookDescript);
-		map.put("object", testDemo);
-		
-		return map;
-	}
+	@GetMapping("/ymlClassBook")
+	public javax.sql.DataSource datasource() {
+        return DataSourceBuilder.create()
+                .driverClassName("com.mysql.cj.jdbc.Driver")
+                .url("jdbc:mysql://localhost:3306/book")
+                .username("root")
+                .password("root")
+                .build();
+    }
+	
+	
+	
+//	@GetMapping("/ymlObjectBook")
+//	public Object getYmlObjectBook() {
+//		return testDemo;
+//	}
 }
