@@ -1,0 +1,14 @@
+server: 
+  port: 8082 
+  servlet: 
+    context-path: /api/v1 
+logging: 
+  level: 
+    root: warn 
+  file: 
+    name: D:/workSpace/2022080901/SpringDemoUpdate/log/debug.log
+    
+book:
+  name: martin教學
+  description: 今天天氣真好
+   
