@@ -47,4 +47,19 @@ public class BookService {
 		return result;
 	}
 	
+	public List<Book> findByAuthor(String author){
+		return bookRepository.findByAuthor(author);
+	}
+	
+	public List<Book> findyByAuthorAndStatus(String author, int status){
+		return bookRepository.findByAuthorAndStatus(author, status);
+	}
+	
+	public List<Book> findByDescriptionEndsWith(String des){
+		return bookRepository.findByDescriptionEndsWith(des);
+	}
+	
+	public List<Book> findByDescriptionContains(String des){
+		return bookRepository.findByDescriptionContains(des);
+	}
 }

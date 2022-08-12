@@ -92,4 +92,24 @@ public class BookApp {
 		String result = boodService.delete(id);
 		return result;
 	}
+	
+	@PostMapping("/findByAuthor")
+	public List<Book> findByAuthor(@RequestParam("author") String author){
+		return boodService.findByAuthor(author);
+	}
+	
+	@PostMapping("/findByAuthorAndStatus")
+	public List<Book> findByAuthorAndStatus(String author, int status){
+		return boodService.findyByAuthorAndStatus(author, status);
+	}
+	
+	@PostMapping("/findByDesEndsWith")
+	public List<Book> findByDescriptionEndsWith(String description){
+		return boodService.findByDescriptionEndsWith(description);
+	}
+	
+	@PostMapping("findByDesContains")
+	public List<Book> findByDescriptionContains(String description){
+		return boodService.findByDescriptionContains(description);
+	}
 }
