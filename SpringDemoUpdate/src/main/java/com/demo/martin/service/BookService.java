@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.demo.martin.entity.Book;
 import com.demo.martin.repository.BookRepository;
@@ -61,5 +62,41 @@ public class BookService {
 	
 	public List<Book> findByDescriptionContains(String des){
 		return bookRepository.findByDescriptionContains(des);
+	}
+	
+	public List<Book>getBooklength(int len){
+		return bookRepository.getBooklength(len);
+	}
+	
+//	public int updateByJpa(int status, long id) {
+//		int result =0;
+//		
+//		try {
+//			bookRepository.updateByJpa(status, id);
+//		}catch(Exception e) {
+//			result=1;
+//		}
+//		
+//		return result;
+//	}
+	
+	public int deleteByJpa(long id) {
+		int result =0;
+		
+		try {
+			bookRepository.deleteByJpa(id);
+		}catch(Exception e) {
+			result =1;
+		}
+		
+		return result;
+	}
+	
+	@Transactional
+	public int deleteAndUpdate(long id, String status, long uid) {
+		int dcount=bookRepository.deleteByJpa(id);
+		int ucount=bookRepository.updateByJpa(status, uid);
+		
+		return dcount+ucount;
 	}
 }

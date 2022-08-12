@@ -108,8 +108,32 @@ public class BookApp {
 		return boodService.findByDescriptionEndsWith(description);
 	}
 	
-	@PostMapping("findByDesContains")
+	@PostMapping("/findByDesContains")
 	public List<Book> findByDescriptionContains(String description){
 		return boodService.findByDescriptionContains(description);
+	}
+	
+	@PostMapping("/findByLength")
+	public List<Book> getBooklength(int len){
+		return boodService.getBooklength(len);
+	}
+	
+//	@PostMapping("/updateByJpa")
+//	public int updateByJpa(int status, long Id) {
+//		System.out.println("status====="+status);
+//		System.out.println("Id====="+Id);
+//		int result = boodService.updateByJpa(status, Id);
+//		return result;
+//	}
+	
+	@PostMapping("/deleteByJpa")
+	public int deleteByJpa(long Id) {
+		int result = boodService.deleteByJpa(Id);
+		return result;
+	}
+	
+	@PostMapping("/deleteUpdate")
+	public int deleteAndUpdate(long Id, String status, long uId) {
+		return boodService.deleteAndUpdate(Id, status, uId);
 	}
 }
