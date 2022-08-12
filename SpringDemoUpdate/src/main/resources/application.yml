@@ -18,11 +18,16 @@ spring:
       url: jdbc:mysql://localhost:3306/book?useUnicode=true&characterEncoding=utf-8
       username: root
       password: root  
-      
+    
+   thymeleaf:
+    mode: HTML
+    
    jpa:
     hibernate:
       ddl-auto: update
     show-sql: true 
+    
+ 
     
  ##ddl-auto:create會讓資料庫自動產生表,但每次啟動都會把資料庫的表刪除重新產生一張(舊資料會不見)
  ##update若是第一次會產生一張新的表,第一次過後則是用"更新"的方式  
