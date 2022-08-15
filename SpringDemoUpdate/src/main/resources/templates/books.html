@@ -2,9 +2,80 @@
 <html> 
 <head> 
 <meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" href="../css/bootstrap.min.css">
 <title>Insert title here</title> 
 </head> 
 <body> 
-<h1>我是template的books.html</h1> 
+	
+	<div class="container">
+		<h2 class="page-header">書單列表</h2>
+		
+		<div class="alert alert-success alert-dismissable fade-in" th:unless="${#strings.isEmpty(message)}">
+			<a href="#" class="close" data-dismiss="alert">&times;</a>
+			<strong>恭喜,</strong>
+			<span th:text="${message}+'信息提交成功'"></span>
+		</div>
+		
+		<p class="text-right"><a href="#" class="btn btn-primary"
+			th:href="@{/jumpToInput}">新增書單</a></p>
+		<!-- 後面的table-striped為自動變色,table-hover則是滑鼠移到目標上面會變色 -->
+		<table class="table table-bordered table-striped table-hover">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>書名</th>
+					<th>作者</th>
+					<th>說明</th>
+					<th>狀態</th>
+					<th>動作</th>
+				</tr>
+			</thead>
+			<!-- 
+			iterstat
+				count:計數
+				index:索引碼
+				size:list的數量
+				even/odd:是否為奇數或複數(呈現為true/false)
+				first/last:是否為第一條/最後一條
+			 -->
+			<tbody>
+			<!--
+			 	<tr th:each="book,iterstat:${books}" th:class="${iterstat.even}? 'bg-danger':'bg-success'">
+			 	這個寫法可以讓一行一行變色
+			 -->
+				<tr th:each="book,iterstat:${page.content}">
+					<td th:text="${iterstat.count}">1</td>
+					<!-- 寫法1<td><a href="#" th:text=${book.name} th:href="@{/getOneBook/{id}(id=${book.id})}"></a></td>-->
+					<td><a href="#" th:text="${book.name}" th:href="@{'/getOneBook/' + ${book.id}}"></a></td>
+					<td th:text=${book.author}>作者</td>
+					<td th:text=${book.description}>說明</td>
+					<td th:switch=${book.status}>
+						<span th:case="0">想讀</span>
+						<span th:case="1">在讀</span>
+						<span th:case="2">已讀</span>
+					</td>
+					<td th:switch="${book.status}">
+						<a href="#" th:href="@{'/editBook/'+${book.id}}">編輯</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<nav>
+			<ul class="pager">
+				<li class="previous" th:unless="${page.number ==0 }"><a href="#" th:href="@{'/thymeBook?page='+${page.number-1}}">上一頁</a></li>
+				<!-- 兩個變數做比較 -->
+				<li class="next" th:unless="${page.number}==${page.totalPages-1}"><a href="#" th:href="@{'/thymeBook?page='+${page.number+1}}">下一頁</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+	 <script th:href="@{/v1/js/bootstrap.min.js}" src="../v1/js/bootstrap.min.js"></script>
 </body> 
 </html>

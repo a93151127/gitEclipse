@@ -2,6 +2,8 @@ package com.demo.martin.repository;
 
 import java.util.List;
 
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -10,6 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 import com.demo.martin.entity.Book;
 
 public interface BookRepository extends JpaRepository<Book,Long>{
+	
+	Page<Book> findAll(Pageable pageable);
 	
 	//jpa會根據命名自動產生sql搜尋方法
 	//這邊是用author欄位去尋找
