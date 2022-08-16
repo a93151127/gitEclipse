@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 配合螢幕尺寸不縮放 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" href="../css/bootstrap.min.css">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container" style="max-width:600px;margin-top:50px">
+		<div class="well">
+			<form th:action="@{/register}" method="post">
+				<div class="from-group">
+					<label for="userNameId">名  稱</label>
+					<input type="text" name="username" id="userNameId" class="form-controller">
+				</div>
+				<div class="from-group">
+					<label for="passwordId">密  碼</label>
+					<input type="password" name="password" id="passwordId" class="form-controller">
+				</div>
+				<div class="from-group">
+					<label for="comfirmPasswordId">確認密碼</label>
+					<input type="password" name="comfirmpassword" id="comfirmPasswordId" class="form-controller">
+				</div>
+				<div class="from-group">
+					<label for="emailId">電子郵件</label>
+					<input type="text" name="email" id="emailId" class="form-controller">
+				</div>
+				<div class="from-group">
+					<label for="phoneId">手機號碼</label>
+					<input type="text" name="phone" id="phoneId" class="form-controller">
+				</div>
+				<p>
+					<button type="submit" class="btn btn-primary">註冊</button>
+				</p>
+			</form>
+		</div>
+	</div>
+
+	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+	 <script th:href="@{/js/bootstrap.min.js}" src="../js/bootstrap.min.js"></script>
+	
+</body>
+</html>
