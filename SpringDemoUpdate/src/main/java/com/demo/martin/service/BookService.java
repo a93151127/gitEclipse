@@ -45,7 +45,7 @@ public class BookService {
 	}
 	
 	public String delete(long id) {
-		String result = "success to delete";
+		String result = "success to deleteASDFD";
 		
 		try {
 			bookRepository.deleteById(id);

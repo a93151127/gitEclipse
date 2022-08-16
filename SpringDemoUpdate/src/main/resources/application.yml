@@ -11,21 +11,34 @@ logging:
 book:
   name: martin教學
   description: 今天天氣真好
+
+
+
   
 spring:
-   datasource:
+    datasource:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://localhost:3306/book?useUnicode=true&characterEncoding=utf-8
       username: root
-      password: root  
+      password: root   
+
+    devtools:
+        restart:
+          additional-paths:
+          - src/main/java
+          exclude: WEB-INF/**
+          enabled: true
+      
+    thymeleaf:
+      mode: HTML
+      cache: false
     
-   thymeleaf:
-    mode: HTML
+    jpa:
+     hibernate:
+        ddl-auto: update
+     show-sql: true 
     
-   jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true 
+  
     
  
     

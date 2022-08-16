@@ -9,6 +9,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,12 +32,19 @@ public class BookController {
 	BookRepository bookrepository;
 	
 	@GetMapping("/thymeBook")
-	public String getBook(Model model,@RequestParam(defaultValue="1" ) int page, @RequestParam(defaultValue="5" ) int size) {
+	//原始寫法
+	//public String getBook(Model model,@RequestParam(defaultValue="1" ) int page, @RequestParam(defaultValue="5" ) int size) {
+	public String getBook(Model model,@PageableDefault(size=5,sort={"id"},direction=Sort.Direction.DESC) Pageable pageable	) {
+		/*原始寫法
 		Sort sort= Sort.by(Sort.Direction.DESC,"id");
 		if(page<0) {
 			page=0;
 		}
 		Pageable pageable= PageRequest.of(page, size, sort);
+		Page<Book> page1=bookservice.findAllByPage(pageable);
+		*/
+		//TODAY IS A GOOD DAY
+		//新寫法
 		Page<Book> page1=bookservice.findAllByPage(pageable);
 		model.addAttribute("page", page1);
 		return "books";
@@ -45,7 +53,6 @@ public class BookController {
 	@GetMapping("/getOneBook/{id}")
 	public String getOneBook(@PathVariable long id, Model model) {
 		Optional<Book> bookOpt = bookservice.findOne(id);
-		
 		Book book=new Book();
 		if(bookOpt.isPresent()) {
 			book = bookOpt.get();
@@ -100,4 +107,6 @@ public class BookController {
 		model.addAttribute("book", book);
 		return "input";
 	}
+	
+
 }
