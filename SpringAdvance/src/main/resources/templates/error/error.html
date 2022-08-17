@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 配合螢幕尺寸不縮放 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../v1/css/bootstrap.min.css">
+<title>error</title>
+</head>
+<body>
+	<div class="container" style="max-width:600px;margin-top:50px">
+		<div class="well">
+			<h2>error</h2>
+			
+		</div>
+	</div>
+	<!-- 
+	下面的部分是把錯誤訊息隱藏起來讓一般使用者看不到
+	只有在瀏覽器按右鍵=>"檢視網頁原始碼"才可以看到
+	th:remove="tag"=>移除標籤
+	 -->
+	
+	<div th:utext="'&lt;!--'" th:remove="tag"></div>
+	<div th:utext="'請求路徑 : '+${url}" th:remove="tag"></div>
+	<div th:utext="'異常訊息 : '+${exception.message}" th:remove="tag"></div>
+	
+	<ul th:remove="tag">
+		<li th:each="st:${exception.stackTrace}" th:remove="tag"><span th:utext="${st}" th:remove="tag"></span></li>
+	</ul>
+	
+	<div th:utext="'--&gt;'" th:remove="tag"></div>
+</body>
+</html>

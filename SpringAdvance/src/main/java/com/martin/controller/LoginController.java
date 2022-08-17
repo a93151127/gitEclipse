@@ -8,6 +8,7 @@ import javax.validation.Valid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,8 +28,9 @@ public class LoginController {
 	UserService userService;
 	
 	@GetMapping("/registerPage")
-	public 	String registerPage() {
+	public 	String registerPage(Model model) {
 		System.out.println("inside login controller");
+		model.addAttribute("userForm", new UserForm());
 		return "register";
 	}
 	
@@ -40,37 +42,28 @@ public class LoginController {
 	@PostMapping("/register")
 	public String register(@Valid UserForm userForm, BindingResult result) {
 		
-		String returnResult="register";
-		
-		List<FieldError> fieldErrors=new ArrayList<FieldError>();
-		
-		if(result.hasErrors()) {
-			fieldErrors=result.getFieldErrors();
-			if(!userForm.checkPassword()) {
-				result.rejectValue("comfirmpassword","ERROR 0000","兩次密碼不一致");
-			}
-		}else {
-			if(!userForm.checkPassword()) {
-				result.rejectValue("comfirmpassword","ERROR 0000","兩次密碼不一致");
-			}else {
-				returnResult="redirect:loginPage";
-			}
-		}
-		System.out.println("size:"+fieldErrors.size());
-		if(StringUtils.equals(returnResult, "register")) {
-			for(FieldError fieldError:fieldErrors) {
-				System.out.println("fieldError:"+fieldError.getField()+"\tmessage:"+fieldError.getDefaultMessage()
-									+"\tcode:"+fieldError.getCode());
-			}
-			return returnResult;
-		}else {
-			User user = userForm.convertToUser();
-			userService.save(user);
-			
+		if(!userForm.checkPassword()) {
 			result.rejectValue("comfirmpassword","ERROR 0000","兩次密碼不一致");
-			return returnResult;
 		}
+		if(result.hasErrors()) {
+			return "register";
+		}
+		User user = userForm.convertToUser();
+		userService.save(user);
 		
+		/*
+		 * 這邊實際上有執行一段
+		 * model.addAttribute("userForm",userForm)
+		 */
+		
+		return "redirect:/loginPage";
+			
+	}
+	
+	@GetMapping("/testException")
+	public String testException() {
+		System.out.println("inside testException");
+		throw new RuntimeException("測試異常處理");
 	}
 	
 }

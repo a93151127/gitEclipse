@@ -12,26 +12,37 @@
 <body>
 	<div class="container" style="max-width:600px;margin-top:50px">
 		<div class="well">
-			<form th:action="@{/register}" method="post">
+			<form th:action="@{/register}" method="post" th:object=${userForm}>
 				<div class="from-group">
 					<label for="userNameId">名  稱</label>
-					<input type="text" name="username" id="userNameId" class="form-controller">
+					<input type="text" name="username" id="userNameId" class="form-controller" th:field="*{username}">
+					<p class="form-control-static text-danger" th:if="${#fields.hasErrors('username')}"
+						th:error="*{username}">名稱不能是空的</p>
 				</div>
 				<div class="from-group">
 					<label for="passwordId">密  碼</label>
-					<input type="password" name="password" id="passwordId" class="form-controller">
+					<input type="password" name="password" id="passwordId" class="form-controller" th:field="*{password}">
+					<p class="form-control-static text-danger" th:if="${#fields.hasErrors('password')}" \
+						th:error="*{password}">密碼不能為空</p>
 				</div>
 				<div class="from-group">
 					<label for="comfirmPasswordId">確認密碼</label>
-					<input type="password" name="comfirmpassword" id="comfirmPasswordId" class="form-controller">
+					<input type="password" name="comfirmpassword" id="comfirmPasswordId" class="form-controller" th:field="*{comfirmpassword}">
+					<p class="form-control-static text-danger" th:if="${#fields.hasErrors('comfirmpassword')}"
+						th:error="*{comfirmpassword}">兩次密碼不一致</p>
 				</div>
 				<div class="from-group">
 					<label for="emailId">電子郵件</label>
-					<input type="text" name="email" id="emailId" class="form-controller">
+					<input type="text" name="email" id="emailId" class="form-controller" th:field="*{email}">
+					<p class="form-control-static text-danger" th:if="${#fields.hasErrors('email')}"
+						ath:error="*{email}">電子郵件格式不對</p>
 				</div>
 				<div class="from-group">
 					<label for="phoneId">手機號碼</label>
-					<input type="text" name="phone" id="phoneId" class="form-controller">
+					<input type="text" name="phone" id="phoneId" class="form-controller" th:field="*{phone}">\
+					<p class="form-control-statix text-danger" th:if="${#fields.hasErrors('phone')}"
+						th:error="*{phone}"></p>
+						
 				</div>
 				<p>
 					<button type="submit" class="btn btn-primary">註冊</button>
