@@ -33,4 +33,43 @@
 			<item value="400"/>
 		</list>
 	</section>
+	<section name="GitCommitSearchPage">
+		<item key="HISTORY_SIZE" value="2"/>
+		<section name="HISTORY0">
+			<section name="searchSection">
+				<item key="ignoreCase" value="true"/>
+				<item key="regexSearch" value="false"/>
+				<item key="textPattern" value="RequestBody"/>
+				<item key="matchAuthor" value="true"/>
+				<item key="matchCommit" value="true"/>
+				<item key="matchCommitter" value="true"/>
+				<item key="matchMessage" value="true"/>
+				<item key="matchParents" value="true"/>
+				<item key="matchTree" value="true"/>
+				<item key="allBranches" value="false"/>
+				<item key="repository0" value="D:\githubnew\final\.git"/>
+				<item key="repository1" value="C:\Users\Administrator\Desktop\springbootclone\gitEclipse\.git"/>
+				<item key="repository2" value="D:\github\.git"/>
+				<item key="repositoryCount" value="3"/>
+			</section>
+		</section>
+		<section name="HISTORY1">
+			<section name="searchSection">
+				<item key="ignoreCase" value="true"/>
+				<item key="regexSearch" value="false"/>
+				<item key="textPattern" value="@RequestBody"/>
+				<item key="matchAuthor" value="true"/>
+				<item key="matchCommit" value="true"/>
+				<item key="matchCommitter" value="true"/>
+				<item key="matchMessage" value="true"/>
+				<item key="matchParents" value="true"/>
+				<item key="matchTree" value="true"/>
+				<item key="allBranches" value="false"/>
+				<item key="repository0" value="D:\githubnew\final\.git"/>
+				<item key="repository1" value="C:\Users\Administrator\Desktop\springbootclone\gitEclipse\.git"/>
+				<item key="repository2" value="D:\github\.git"/>
+				<item key="repositoryCount" value="3"/>
+			</section>
+		</section>
+	</section>
 </section>

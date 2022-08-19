@@ -1,0 +1,543 @@
+2022-08-19 09:12:20.424  INFO 12512 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 12512 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 09:12:20.433  INFO 12512 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 09:12:21.231  INFO 12512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 09:12:21.297  INFO 12512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2022-08-19 09:12:22.048  INFO 12512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 09:12:22.061  INFO 12512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 09:12:22.061  INFO 12512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 09:12:22.178  INFO 12512 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 09:12:22.179  INFO 12512 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1679 ms
+2022-08-19 09:12:22.331  INFO 12512 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 09:12:22.390  INFO 12512 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 09:12:22.560  INFO 12512 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 09:12:22.665  INFO 12512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 09:12:22.991  INFO 12512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 09:12:23.022  INFO 12512 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 09:12:23.719  INFO 12512 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 09:12:23.730  INFO 12512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:12:24.230  WARN 12512 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 09:12:24.563  INFO 12512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 09:12:24.571  INFO 12512 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 4.726 seconds (JVM running for 5.677)
+2022-08-19 09:13:13.984  INFO 12512 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 09:13:14.050  INFO 12512 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : before=========
+2022-08-19 09:13:14.070  INFO 12512 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : info---log
+2022-08-19 09:13:14.070  WARN 12512 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : warn---log
+2022-08-19 09:13:14.071 ERROR 12512 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : error---log
+2022-08-19 09:13:14.072 DEBUG 12512 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : debug---log
+2022-08-19 09:13:14.072  INFO 12512 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : name: martin , email :a93151127@gmail.com
+2022-08-19 09:14:01.547  INFO 12512 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 09:14:01.592  INFO 12512 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:14:01.594  INFO 12512 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 09:14:01.607  INFO 12512 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 09:14:04.498  INFO 31536 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 31536 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 09:14:04.502  INFO 31536 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 09:14:05.374  INFO 31536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 09:14:05.453  INFO 31536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
+2022-08-19 09:14:06.244  INFO 31536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 09:14:06.257  INFO 31536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 09:14:06.258  INFO 31536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 09:14:06.398  INFO 31536 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 09:14:06.399  INFO 31536 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1832 ms
+2022-08-19 09:14:06.592  INFO 31536 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 09:14:06.665  INFO 31536 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 09:14:06.901  INFO 31536 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 09:14:07.099  INFO 31536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 09:14:07.648  INFO 31536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 09:14:07.694  INFO 31536 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 09:14:08.672  INFO 31536 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 09:14:08.684  INFO 31536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:14:09.319  WARN 31536 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 09:14:09.745  INFO 31536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 09:14:09.756  INFO 31536 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 5.9 seconds (JVM running for 7.061)
+2022-08-19 09:14:13.879  INFO 31536 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 09:14:13.942  INFO 31536 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : before=========
+2022-08-19 09:14:13.967  INFO 31536 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : info---log
+2022-08-19 09:14:13.968  WARN 31536 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : warn---log
+2022-08-19 09:14:13.968 ERROR 31536 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : error---log
+2022-08-19 09:14:13.968 DEBUG 31536 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : debug---log
+2022-08-19 09:14:13.969  INFO 31536 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : name: martin , email :a93151127@gmail.com
+2022-08-19 09:14:13.970  INFO 31536 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : ---------- doAfter 2 ----------
+2022-08-19 09:15:55.849  INFO 31536 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 09:15:55.891  INFO 31536 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:15:55.892  INFO 31536 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 09:15:55.904  INFO 31536 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 09:15:58.511  INFO 23720 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 23720 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 09:15:58.514  INFO 23720 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 09:15:59.234  INFO 23720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 09:15:59.304  INFO 23720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2022-08-19 09:16:00.032  INFO 23720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 09:16:00.045  INFO 23720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 09:16:00.046  INFO 23720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 09:16:00.168  INFO 23720 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 09:16:00.169  INFO 23720 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1601 ms
+2022-08-19 09:16:00.329  INFO 23720 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 09:16:00.390  INFO 23720 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 09:16:00.560  INFO 23720 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 09:16:00.666  INFO 23720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 09:16:01.003  INFO 23720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 09:16:01.035  INFO 23720 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 09:16:01.789  INFO 23720 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 09:16:01.802  INFO 23720 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:16:02.354  WARN 23720 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 09:16:02.732  INFO 23720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 09:16:02.741  INFO 23720 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 4.801 seconds (JVM running for 5.833)
+2022-08-19 09:16:06.590  INFO 23720 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 09:16:06.628  INFO 23720 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : before=========
+2022-08-19 09:16:06.645  INFO 23720 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : info---log
+2022-08-19 09:16:06.645  WARN 23720 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : warn---log
+2022-08-19 09:16:06.645 ERROR 23720 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : error---log
+2022-08-19 09:16:06.645 DEBUG 23720 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : debug---log
+2022-08-19 09:16:06.645  INFO 23720 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : name: martin , email :a93151127@gmail.com
+2022-08-19 09:16:06.646  INFO 23720 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : After=========
+2022-08-19 09:18:03.250  INFO 23720 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 09:18:03.285  INFO 23720 --- [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:18:03.286  INFO 23720 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 09:18:03.299  INFO 23720 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 09:18:05.694  INFO 19592 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 19592 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 09:18:05.698  INFO 19592 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 09:18:06.515  INFO 19592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 09:18:06.586  INFO 19592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2022-08-19 09:18:07.393  INFO 19592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 09:18:07.408  INFO 19592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 09:18:07.409  INFO 19592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 09:18:07.569  INFO 19592 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 09:18:07.570  INFO 19592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1813 ms
+2022-08-19 09:18:07.753  INFO 19592 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 09:18:07.823  INFO 19592 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 09:18:08.016  INFO 19592 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 09:18:08.133  INFO 19592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 09:18:08.482  INFO 19592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 09:18:08.515  INFO 19592 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 09:18:09.249  INFO 19592 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 09:18:09.259  INFO 19592 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:18:09.788  WARN 19592 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 09:18:10.164  INFO 19592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 09:18:10.173  INFO 19592 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 5.117 seconds (JVM running for 6.109)
+2022-08-19 09:18:18.007  INFO 19592 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 09:18:18.049  INFO 19592 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : before=========
+2022-08-19 09:18:18.066  INFO 19592 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : info---log
+2022-08-19 09:18:18.066  WARN 19592 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : warn---log
+2022-08-19 09:18:18.066 ERROR 19592 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : error---log
+2022-08-19 09:18:18.066 DEBUG 19592 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : debug---log
+2022-08-19 09:18:18.066  INFO 19592 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : name: martin , email :a93151127@gmail.com
+2022-08-19 09:18:18.067  INFO 19592 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : Return ------ testlog
+2022-08-19 09:18:18.067  INFO 19592 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : After=========
+2022-08-19 09:20:28.251  INFO 19592 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 09:20:28.281  INFO 19592 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:20:28.282  INFO 19592 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 09:20:28.293  INFO 19592 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 09:20:30.664  INFO 2960 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 2960 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 09:20:30.666  INFO 2960 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 09:20:31.273  INFO 2960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 09:20:31.331  INFO 2960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2022-08-19 09:20:31.944  INFO 2960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 09:20:31.955  INFO 2960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 09:20:31.955  INFO 2960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 09:20:32.066  INFO 2960 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 09:20:32.066  INFO 2960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1354 ms
+2022-08-19 09:20:32.207  INFO 2960 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 09:20:32.255  INFO 2960 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 09:20:32.410  INFO 2960 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 09:20:32.507  INFO 2960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 09:20:32.814  INFO 2960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 09:20:32.843  INFO 2960 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 09:20:33.498  INFO 2960 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 09:20:33.507  INFO 2960 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:20:33.987  WARN 2960 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 09:20:34.310  INFO 2960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 09:20:34.318  INFO 2960 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 4.127 seconds (JVM running for 5.018)
+2022-08-19 09:20:37.626  INFO 2960 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 09:20:37.664  INFO 2960 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : before=========
+2022-08-19 09:20:37.678  INFO 2960 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : info---log
+2022-08-19 09:20:37.678  WARN 2960 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : warn---log
+2022-08-19 09:20:37.678 ERROR 2960 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : error---log
+2022-08-19 09:20:37.678 DEBUG 2960 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : debug---log
+2022-08-19 09:20:37.678  INFO 2960 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : name: martin , email :a93151127@gmail.com
+2022-08-19 09:20:37.678  INFO 2960 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : Return ------ testlog
+2022-08-19 09:20:37.678  INFO 2960 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : After=========
+2022-08-19 09:21:09.089  INFO 2960 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 09:21:09.133  INFO 2960 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:21:09.134  INFO 2960 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 09:21:09.141  INFO 2960 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 09:21:11.329  INFO 5944 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 5944 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 09:21:11.332  INFO 5944 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 09:21:11.910  INFO 5944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 09:21:11.965  INFO 5944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2022-08-19 09:21:12.310  WARN 5944 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut doAfter
+2022-08-19 09:21:12.319  INFO 5944 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-19 09:21:12.342 ERROR 5944 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut doAfter
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.martin.SpringAdvanceApiApplication.main(SpringAdvanceApiApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut doAfter
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	... 14 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut doAfter
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:341)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	... 36 common frames omitted
+
+2022-08-19 09:23:27.607  INFO 24840 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 24840 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 09:23:27.611  INFO 24840 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 09:23:28.382  INFO 24840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 09:23:28.461  INFO 24840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
+2022-08-19 09:23:29.215  INFO 24840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 09:23:29.227  INFO 24840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 09:23:29.227  INFO 24840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 09:23:29.351  INFO 24840 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 09:23:29.351  INFO 24840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1689 ms
+2022-08-19 09:23:29.519  INFO 24840 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 09:23:29.584  INFO 24840 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 09:23:29.763  INFO 24840 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 09:23:29.877  INFO 24840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 09:23:30.236  INFO 24840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 09:23:30.271  INFO 24840 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 09:23:31.031  INFO 24840 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 09:23:31.044  INFO 24840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:23:31.608  WARN 24840 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 09:23:31.984  INFO 24840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 09:23:31.996  INFO 24840 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 4.873 seconds (JVM running for 5.648)
+2022-08-19 09:23:36.024  INFO 24840 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 09:23:36.083  INFO 24840 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 1before=========
+2022-08-19 09:23:36.096  INFO 24840 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : info---log
+2022-08-19 09:23:36.097  WARN 24840 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : warn---log
+2022-08-19 09:23:36.098 ERROR 24840 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : error---log
+2022-08-19 09:23:36.098 DEBUG 24840 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : debug---log
+2022-08-19 09:23:36.098  INFO 24840 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : name: martin , email :a93151127@gmail.com
+2022-08-19 09:23:36.099  INFO 24840 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3========
+2022-08-19 09:23:36.101  INFO 24840 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:24:40.315  INFO 24840 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 09:24:40.344  INFO 24840 --- [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:24:40.345  INFO 24840 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 09:24:40.353  INFO 24840 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 09:24:42.613  INFO 30056 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 30056 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 09:24:42.616  INFO 30056 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 09:24:43.204  INFO 30056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 09:24:43.259  INFO 30056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2022-08-19 09:24:43.861  INFO 30056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 09:24:43.871  INFO 30056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 09:24:43.872  INFO 30056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 09:24:43.980  INFO 30056 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 09:24:43.980  INFO 30056 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1313 ms
+2022-08-19 09:24:44.118  INFO 30056 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 09:24:44.173  INFO 30056 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 09:24:44.326  INFO 30056 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 09:24:44.423  INFO 30056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 09:24:44.737  INFO 30056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 09:24:44.766  INFO 30056 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 09:24:45.458  INFO 30056 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 09:24:45.468  INFO 30056 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:24:46.016  WARN 30056 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 09:24:46.403  INFO 30056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 09:24:46.413  INFO 30056 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 4.304 seconds (JVM running for 5.101)
+2022-08-19 09:24:52.533  INFO 30056 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 09:24:52.578  INFO 30056 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 1before=========
+2022-08-19 09:24:52.603  INFO 30056 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : inside LogTestApi=======
+2022-08-19 09:24:52.604  INFO 30056 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3========
+2022-08-19 09:24:52.605  INFO 30056 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:25:30.254  INFO 30056 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 09:25:30.291  INFO 30056 --- [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:25:30.292  INFO 30056 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 09:25:30.299  INFO 30056 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 09:25:32.540  INFO 396 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 396 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 09:25:32.543  INFO 396 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 09:25:33.173  INFO 396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 09:25:33.226  INFO 396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2022-08-19 09:25:33.860  INFO 396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 09:25:33.872  INFO 396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 09:25:33.873  INFO 396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 09:25:33.988  INFO 396 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 09:25:33.988  INFO 396 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1398 ms
+2022-08-19 09:25:34.134  INFO 396 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 09:25:34.182  INFO 396 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 09:25:34.347  INFO 396 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 09:25:34.448  INFO 396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 09:25:34.763  INFO 396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 09:25:34.792  INFO 396 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 09:25:35.430  INFO 396 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 09:25:35.439  INFO 396 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:25:35.906  WARN 396 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 09:25:36.224  INFO 396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 09:25:36.232  INFO 396 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 4.186 seconds (JVM running for 5.069)
+2022-08-19 09:25:42.213  INFO 396 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 09:25:42.258  INFO 396 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 1=========
+2022-08-19 09:25:42.273  INFO 396 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : inside LogTestApi=======
+2022-08-19 09:25:42.274  INFO 396 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3========
+2022-08-19 09:25:42.274  INFO 396 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:37.652  INFO 396 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 09:27:37.692  INFO 396 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:27:37.694  INFO 396 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 09:27:37.702  INFO 396 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 09:27:40.208  INFO 5788 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 5788 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 09:27:40.212  INFO 5788 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 09:27:41.385  INFO 5788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 09:27:41.508  INFO 5788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 1 JPA repository interfaces.
+2022-08-19 09:27:42.527  INFO 5788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 09:27:42.542  INFO 5788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 09:27:42.543  INFO 5788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 09:27:42.697  INFO 5788 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 09:27:42.697  INFO 5788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2412 ms
+2022-08-19 09:27:42.896  INFO 5788 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 09:27:42.965  INFO 5788 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 09:27:43.232  INFO 5788 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 09:27:43.370  INFO 5788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 09:27:43.786  INFO 5788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 09:27:43.825  INFO 5788 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 09:27:44.774  INFO 5788 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 09:27:44.789  INFO 5788 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:27:45.469  WARN 5788 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 09:27:45.894  INFO 5788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 09:27:45.905  INFO 5788 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 6.471 seconds (JVM running for 7.47)
+2022-08-19 09:27:52.637  INFO 5788 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 09:27:52.677  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 1=========
+2022-08-19 09:27:52.694  INFO 5788 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : inside LogTestApi=======
+2022-08-19 09:27:52.695  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3========
+2022-08-19 09:27:52.695  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.695  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.695  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.695  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.695  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.695  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.695  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.695  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.695  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.696  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.696  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.696  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.696  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.696  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.696  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.696  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.696  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.696  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.696  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.696  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.697  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.697  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.697  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.697  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.697  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.697  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.698  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.698  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.698  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.698  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.698  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.698  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:27:52.698  INFO 5788 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:28:22.803  INFO 5788 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 09:28:22.849  INFO 5788 --- [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:28:22.852  INFO 5788 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 09:28:22.883  INFO 5788 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 09:28:26.128  INFO 22968 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 22968 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 09:28:26.131  INFO 22968 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 09:28:26.901  INFO 22968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 09:28:26.968  INFO 22968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2022-08-19 09:28:27.685  INFO 22968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 09:28:27.697  INFO 22968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 09:28:27.698  INFO 22968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 09:28:27.821  INFO 22968 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 09:28:27.821  INFO 22968 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1637 ms
+2022-08-19 09:28:27.976  INFO 22968 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 09:28:28.039  INFO 22968 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 09:28:28.224  INFO 22968 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 09:28:28.344  INFO 22968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 09:28:28.697  INFO 22968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 09:28:28.730  INFO 22968 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 09:28:29.511  INFO 22968 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 09:28:29.521  INFO 22968 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:28:30.081  WARN 22968 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 09:28:30.491  INFO 22968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 09:28:30.501  INFO 22968 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 4.941 seconds (JVM running for 6.023)
+2022-08-19 09:28:35.509  INFO 22968 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 09:28:35.557  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 1before=========
+2022-08-19 09:28:35.571  INFO 22968 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : inside LogTestApi=======
+2022-08-19 09:28:35.572  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.572  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.572  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.572  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.572  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.572  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.572  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.572  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.572  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.572  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.572  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.572  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.573  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.574  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:28:35.574  INFO 22968 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 09:30:47.708  INFO 22968 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 09:30:47.762  INFO 22968 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:30:47.763  INFO 22968 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 09:30:47.772  INFO 22968 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 09:30:49.993  INFO 13508 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 13508 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 09:30:49.997  INFO 13508 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 09:30:50.646  INFO 13508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 09:30:50.704  INFO 13508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2022-08-19 09:30:51.381  INFO 13508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 09:30:51.392  INFO 13508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 09:30:51.393  INFO 13508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 09:30:51.507  INFO 13508 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 09:30:51.507  INFO 13508 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1461 ms
+2022-08-19 09:30:51.663  INFO 13508 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 09:30:51.718  INFO 13508 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 09:30:51.871  INFO 13508 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 09:30:51.973  INFO 13508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 09:30:52.287  INFO 13508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 09:30:52.316  INFO 13508 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 09:30:52.957  INFO 13508 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 09:30:52.965  INFO 13508 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 09:30:53.434  WARN 13508 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 09:30:53.756  INFO 13508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 09:30:53.765  INFO 13508 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 4.287 seconds (JVM running for 5.058)
+2022-08-19 09:30:58.033  INFO 13508 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 09:30:58.072  INFO 13508 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 1before=========
+2022-08-19 09:30:58.089  INFO 13508 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : inside LogTestApi=======
+2022-08-19 09:30:58.090  INFO 13508 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 09:30:58.091  INFO 13508 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 10:30:36.926  INFO 13508 --- [RMI TCP Connection(69)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 10:30:36.965  INFO 13508 --- [RMI TCP Connection(69)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 10:30:36.968  INFO 13508 --- [RMI TCP Connection(69)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 10:30:36.974  INFO 13508 --- [RMI TCP Connection(69)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 10:30:39.269  INFO 9276 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 9276 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 10:30:39.273  INFO 9276 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 10:30:39.920  INFO 9276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 10:30:39.975  INFO 9276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2022-08-19 10:30:40.734  INFO 9276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 10:30:40.746  INFO 9276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 10:30:40.746  INFO 9276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 10:30:40.880  INFO 9276 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 10:30:40.880  INFO 9276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1556 ms
+2022-08-19 10:30:41.052  INFO 9276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 10:30:41.101  INFO 9276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 10:30:41.267  INFO 9276 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 10:30:41.374  INFO 9276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 10:30:41.738  INFO 9276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 10:30:41.781  INFO 9276 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 10:30:42.510  INFO 9276 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 10:30:42.523  INFO 9276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 10:30:43.195  WARN 9276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 10:30:43.717  INFO 9276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 10:30:43.725  INFO 9276 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 4.953 seconds (JVM running for 5.788)
+2022-08-19 10:30:47.737  INFO 9276 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 10:30:47.791  INFO 9276 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 1before=========
+2022-08-19 10:30:47.794  INFO 9276 --- [http-nio-8082-exec-1] com.martin.aop.LoggerAspect              : ==Request==RequestLog [url=http://127.0.0.1:8082/api/v1/log, ip=127.0.0.1, classMethod=com.martin.controller.LogTestApi,log, arg=[]]:
+2022-08-19 10:30:47.814  INFO 9276 --- [http-nio-8082-exec-1] com.martin.controller.LogTestApi         : inside LogTestApi=======
+2022-08-19 10:30:47.814  INFO 9276 --- [http-nio-8082-exec-1] com.martin.aop.LoggerAspect              : ==Result==testlog:
+2022-08-19 10:30:47.815  INFO 9276 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 3=========
+2022-08-19 10:30:47.815  INFO 9276 --- [http-nio-8082-exec-1] com.martin.aop.LogAspect                 : 2=========
+2022-08-19 10:31:07.497  INFO 9276 --- [http-nio-8082-exec-2] com.martin.aop.LoggerAspect              : ==Request==RequestLog [url=http://127.0.0.1:8082/api/v1/books, ip=127.0.0.1, classMethod=com.martin.controller.BookApi,getAllBooks, arg=[]]:
+2022-08-19 10:31:07.602  INFO 9276 --- [http-nio-8082-exec-2] com.martin.aop.LoggerAspect              : ==Result==<200 OK OK,[com.martin.dao.Book@59ad9fd1, com.martin.dao.Book@6109e342, com.martin.dao.Book@19fea5bd, com.martin.dao.Book@52d15ce1, com.martin.dao.Book@7cf37eff, com.martin.dao.Book@524e81d0, com.martin.dao.Book@3ef11569, com.martin.dao.Book@669f7002, com.martin.dao.Book@1fcfea8, com.martin.dao.Book@279abf46, com.martin.dao.Book@1176bc81, com.martin.dao.Book@cf4d1cd, com.martin.dao.Book@6a1b6745, com.martin.dao.Book@188995cf, com.martin.dao.Book@27ff08cf, com.martin.dao.Book@738cd612, com.martin.dao.Book@32f59860, com.martin.dao.Book@5f576592, com.martin.dao.Book@b1b7c7, com.martin.dao.Book@1518dd85, com.martin.dao.Book@bb071de, com.martin.dao.Book@6fafeecf, com.martin.dao.Book@62ad7372, com.martin.dao.Book@318a6e57, com.martin.dao.Book@39bcd739, com.martin.dao.Book@29f59f57, com.martin.dao.Book@204a5ff8, com.martin.dao.Book@42d07570, com.martin.dao.Book@1d0a670c],[]>:
+2022-08-19 10:37:39.221  INFO 9276 --- [http-nio-8082-exec-4] com.martin.aop.LoggerAspect              : ==Request==RequestLog [url=http://127.0.0.1:8082/api/v1/books/3, ip=127.0.0.1, classMethod=com.martin.controller.BookApi,findOneBook, arg=[3]]:
+2022-08-19 10:37:39.241  INFO 9276 --- [http-nio-8082-exec-4] com.martin.aop.LoggerAspect              : ==Result==<200 OK OK,com.martin.dao.Book@577b2f58,[]>:
+2022-08-19 10:37:53.929  INFO 9276 --- [http-nio-8082-exec-5] com.martin.aop.LoggerAspect              : ==Request==RequestLog [url=http://127.0.0.1:8082/api/v1/books/3000, ip=127.0.0.1, classMethod=com.martin.controller.BookApi,findOneBook, arg=[3000]]:
+2022-08-19 10:51:54.978  INFO 9276 --- [RMI TCP Connection(31)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 10:51:55.011  INFO 9276 --- [RMI TCP Connection(31)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 10:51:55.013  INFO 9276 --- [RMI TCP Connection(31)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 10:51:55.020  INFO 9276 --- [RMI TCP Connection(31)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 10:51:57.196  INFO 22080 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 22080 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 10:51:57.199  INFO 22080 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 10:51:57.779  INFO 22080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 10:51:57.833  INFO 22080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2022-08-19 10:51:58.532  INFO 22080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 10:51:58.542  INFO 22080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 10:51:58.542  INFO 22080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 10:51:58.662  INFO 22080 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 10:51:58.663  INFO 22080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1418 ms
+2022-08-19 10:51:58.830  INFO 22080 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 10:51:58.875  INFO 22080 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 10:51:59.020  INFO 22080 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 10:51:59.117  INFO 22080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-19 10:51:59.416  INFO 22080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-19 10:51:59.443  INFO 22080 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-19 10:52:00.069  INFO 22080 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-19 10:52:00.077  INFO 22080 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 10:52:00.769  WARN 22080 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-19 10:52:01.368  INFO 22080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-19 10:52:01.376  INFO 22080 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 4.642 seconds (JVM running for 5.433)
+2022-08-19 10:52:32.705  INFO 22080 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 10:52:32.769  INFO 22080 --- [http-nio-8082-exec-1] com.martin.aop.LoggerAspect              : ==Request==RequestLog [url=http://127.0.0.1:8082/api/v1/books/3000, ip=127.0.0.1, classMethod=com.martin.controller.BookApi,findOneBook, arg=[3000]]:
+2022-08-19 10:52:32.831  INFO 22080 --- [http-nio-8082-exec-1] com.martin.aop.LoggerAspect              : --inside exception--
+2022-08-19 10:52:32.843  INFO 22080 --- [http-nio-8082-exec-1] com.martin.aop.LoggerAspect              : ==exception result==<404 NOT_FOUND Not Found,com.martin.resource.ErrorResource@49e122d,[]>
+2022-08-19 11:22:21.818  INFO 22080 --- [RMI TCP Connection(37)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-19 11:22:21.883  INFO 22080 --- [RMI TCP Connection(37)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-19 11:22:21.885  INFO 22080 --- [RMI TCP Connection(37)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-19 11:22:21.894  INFO 22080 --- [RMI TCP Connection(37)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-19 17:22:20.584  INFO 1160 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-HHS2IT1T with PID 1160 (C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi\target\classes started by Administrator in C:\Users\Administrator\Desktop\springbootclone\gitEclipse\SpringAdvanceApi)
+2022-08-19 17:22:20.587  INFO 1160 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 17:22:21.167  INFO 1160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-19 17:22:21.226  INFO 1160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2022-08-19 17:22:21.981  INFO 1160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-19 17:22:21.992  INFO 1160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 17:22:21.993  INFO 1160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 17:22:22.100  INFO 1160 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-19 17:22:22.100  INFO 1160 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1465 ms
+2022-08-19 17:22:22.277  INFO 1160 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-19 17:22:22.324  INFO 1160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-19 17:22:22.480  INFO 1160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-19 17:22:22.624  INFO 1160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...

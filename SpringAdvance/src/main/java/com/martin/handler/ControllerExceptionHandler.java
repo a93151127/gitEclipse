@@ -24,7 +24,7 @@ public class ControllerExceptionHandler {
 	
 	@ExceptionHandler(Exception.class)
 	public ModelAndView handleException(HttpServletRequest request, Exception e ) throws Exception {
-		logger.error("Reqiest URL: {}", request.getRequestURL(),e.getMessage());
+		logger.error("Request URL: {}", request.getRequestURL(),e.getMessage());
 		
 		/*
 		 * 如果我們其他地方有使用annotation去指定exception的話會跳到指定的錯誤頁面,否則才會執行下面的那段程式碼

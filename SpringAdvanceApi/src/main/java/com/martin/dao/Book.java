@@ -5,6 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotBlank;
+
 @Entity
 public class Book {
 	
@@ -12,12 +15,12 @@ public class Book {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	
+	@NotBlank
 	private String name;
-	
+	@Length(min=3)
 	private String author;
-	
 	private int status;
-	
+	@Length(max=10)
 	private String description;
 
 	public long getId() {

@@ -3,6 +3,7 @@ package com.martin.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.beans.BeanUtils;
@@ -12,7 +13,9 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.thymeleaf.util.StringUtils;
 
@@ -37,6 +40,30 @@ public class LoginController {
 	@GetMapping("/loginPage")
 	public String loginPage() {
 		return "login";
+	}
+	
+	@GetMapping("/")
+	public String index() {
+		return "index";
+	}
+	
+	@GetMapping("/logout")
+	public String logout(HttpSession session) {
+		session.removeAttribute("user");
+		return "login";
+	}
+	
+	@PostMapping("/login")
+	public String loginPost(@RequestParam String username,
+            @RequestParam String password,
+            HttpSession session) {
+		User user = userService.findByUsernameAndPassword(username, password);
+		
+		if(user !=null) {
+			session.setAttribute("user", user);
+			return "index";
+		}
+		return "loginPage";
 	}
 	
 	@PostMapping("/register")
