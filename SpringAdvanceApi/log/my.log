@@ -541,3 +541,27 @@ Caused by: java.lang.IllegalArgumentException: error at ::0 can't find reference
 2022-08-19 17:22:22.324  INFO 1160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
 2022-08-19 17:22:22.480  INFO 1160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-08-19 17:22:22.624  INFO 1160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-21 16:11:02.551  INFO 7540 --- [main] com.martin.SpringAdvanceApiApplication   : Starting SpringAdvanceApiApplication using Java 17.0.4 on LAPTOP-I8FNLLM2 with PID 7540 (D:\workSpace\springBoot\SpringAdvanceApi\target\classes started by user in D:\workSpace\springBoot\SpringAdvanceApi)
+2022-08-21 16:11:02.554  INFO 7540 --- [main] com.martin.SpringAdvanceApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-21 16:11:02.878  INFO 7540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-21 16:11:02.905  INFO 7540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+2022-08-21 16:11:03.318  INFO 7540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-21 16:11:03.324  INFO 7540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-21 16:11:03.324  INFO 7540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-21 16:11:03.434  INFO 7540 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-21 16:11:03.435  INFO 7540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 857 ms
+2022-08-21 16:11:03.536  INFO 7540 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-21 16:11:03.560  INFO 7540 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-21 16:11:03.639  INFO 7540 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-21 16:11:03.694  INFO 7540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-21 16:11:03.880  INFO 7540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-21 16:11:03.896  INFO 7540 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-21 16:11:04.276  INFO 7540 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-21 16:11:04.282  INFO 7540 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-21 16:11:04.687  WARN 7540 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-21 16:11:05.011  INFO 7540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1'
+2022-08-21 16:11:05.016  INFO 7540 --- [main] com.martin.SpringAdvanceApiApplication   : Started SpringAdvanceApiApplication in 2.728 seconds (JVM running for 4.911)
+2022-08-21 16:11:09.838  INFO 7540 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-21 16:11:09.850  INFO 7540 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-21 16:11:09.850  INFO 7540 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-21 16:11:09.856  INFO 7540 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
