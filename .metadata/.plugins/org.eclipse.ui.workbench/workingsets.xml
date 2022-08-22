@@ -5,14 +5,15 @@
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1660209723957_4" label="SpringDemoUpdate" name="SpringDemoUpdate">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SpringDemoUpdate" type="4"/>
 </workingSet>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1661068158987_5" label="BookTest" name="BookTest"/>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1661068556379_6" label="SpringAdvance" name="SpringAdvance">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SpringAdvance" type="4"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1661068158987_5" label="BookTest" name="BookTest">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/BookTest" type="4"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1661068556379_6" label="SpringAdvance" name="SpringAdvance"/>
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1661068648130_7" label="SpringAdvanceApi" name="SpringAdvanceApi">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SpringAdvanceApi" type="4"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1661068663539_8" label="SpringBootJpaDemo" name="SpringBootJpaDemo"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1660036130534_2" label="Window Working Set" name="Aggregate for window 1660036130534"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1660095520410_3" label="Window Working Set" name="Aggregate for window 1660095520410"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1661136519782_9" label="Window Working Set" name="Aggregate for window 1661136519782"/>
 </workingSetManager>

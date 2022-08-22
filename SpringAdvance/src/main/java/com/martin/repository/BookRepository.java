@@ -31,6 +31,7 @@ public interface BookRepository extends JpaRepository<Book,Long>{
 	//自定義查詢
 	//hql語法查詢(Book為實體物件)
 	//@Query("select b from Book b where length(b.name)>?1")
+	
 	//sql語法查詢
 	@Query(value = "SELECT * FROM book where length(name)>?1",nativeQuery = true)
 	List<Book> getBooklength(int length) ;
